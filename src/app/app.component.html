@@ -1,0 +1,40 @@
+
+<div class="calculator">
+  <div class="display">{{ display$ | async }}</div>
+
+  <div class="power-of-friendship">
+    <button class="button-power" (click)="onPower()">ON</button>
+    <button class="button-power-off" (click)="onPower(false)">OFF</button>
+  </div>
+
+  <div id="jasmine_content" class="additional-buttons">
+    <button (click)="onExponentiate()">x^2</button>
+    <button (click)="onLogarithm()">log</button>
+    <button (click)="onSine()">sin</button>
+    <button (click)="onCosine()">cos</button>
+    <button (click)="onTangent()">tan</button>
+    <button (click)="onCotangent()">cot</button>
+  </div>
+
+  <div class="main-buttons">
+
+    <button (click)="onDigit('1')">1</button>
+    <button (click)="onDigit('2')">2</button>
+    <button (click)="onDigit('3')">3</button>
+    <button (click)="onOperation('+')">+</button>
+    <button (click)="onDigit('4')">4</button>
+    <button (click)="onDigit('5')">5</button>
+    <button (click)="onDigit('6')">6</button>
+    <button (click)="onOperation('-')">-</button>
+    <button (click)="onDigit('7')">7</button>
+    <button (click)="onDigit('8')">8</button>
+    <button (click)="onDigit('9')">9</button>
+    <button (click)="onOperation('*')">*</button>
+    <button (click)="onDigit('0')">0</button>
+    <button (click)="onClear()">AC</button>
+    <button (click)="onCalculate()">=</button>
+    <button (click)="onOperation('/')">/</button>
+  </div>
+
+</div>
+
